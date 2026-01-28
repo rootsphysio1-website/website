@@ -317,6 +317,21 @@
             gap: 1.5rem;
         }
 
+        .about-feature-image {
+            grid-column: 1 / -1; /* spans full width above feature items */
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(147, 197, 114, 0.25);
+        }
+
+            .about-feature-image img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                display: block;
+            }
+
+
         .feature-item {
             display: flex;
             align-items: center;
@@ -531,6 +546,12 @@
             padding-top: 1rem;
             border-top: 1px solid rgba(255,255,255,0.2);
         }
+        @media (min-width: 1000px) {
+            .about-feature-image img {
+                height: 280px;
+            }
+        }
+
         @media (min-width: 1200px) {
             .logo {
                 height: 90px;
@@ -689,26 +710,26 @@
     <section class="stats">
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">20+</div>
+                <div class="stat-number">8+</div>
                 <div class="stat-label">Years of Excellence</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">8000+</div>
+                <div class="stat-number">1000+</div>
                 <div class="stat-label">Patients Recovered</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">95%</div>
+                <div class="stat-number">98%</div>
                 <div class="stat-label">Success Rate</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">25+</div>
+                <div class="stat-number">5+</div>
                 <div class="stat-label">Specialist Therapists</div>
             </div>
         </div>
     </section>
     <section id="sports_injury" class="sports_injury">
         <div class="container">
-            <h2 class="section-title">Sports Injury : Role of Sports Physiotherapy in Rehabilitation</h2>
+            <h2 class="section-title">Sports Injury : Role of Physiotherapy in Rehabilitation</h2>
             <p class="section-subtitle">Sports physiotherapists play a vital role in athletic rehabilitation by supporting injury recovery, enhancing performance, and educating athletes on preventing future injuries. Our comprehensive sports physiotherapy services include:</p>
             <div class="sports_injury-grid">
                 <div class="sports_injury-item">
@@ -836,11 +857,16 @@
                     </div>
                 </div>
                 <div class="about-features">
+                    <div class="about-feature-image">
+                        <img src="https://www.w3schools.com/w3images/avatar3.png" alt="Main Physiotherapist at Roots Physio & Rehab Clinic">
+                        <center><p style="background: white;"><u><b>Dr. Shyama Prasad Mondal(PT)</b></u></p></center>
+                    </div>
+
                     <div class="feature-item">
                         <span class="feature-icon">🎓</span>
                         <div>
                             <strong>Expert Team</strong>
-                            <p>Under the guidance of Dr. Shyama Prasad Mondal.</p>
+                            <p>Led by Dr. Shyama Prasad Mondal.</p>
                         </div>
                     </div>
                     <div class="feature-item">
