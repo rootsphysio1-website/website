@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official Homepage of Roots Physio and Rehab clinic.">
+    <meta name="keywords" content="Roots,Physio,Physiotherapy,Physio & Rehab,Physiotherapy & Rehab,Spinal Physiotherapy,Neuro Physiotherapy,Neurological Physiotherapy,Roots Physio & Rehab clinic,Roots Physio & Rehab clinic - Kolkata,Physiotherapy in Kolkata, Physiotherapists in Kolkata, Physiotherapy Kolkata">
+    <meta name="author" content="Saharsh Bhadani Venture Private Limited">
+    <link rel="icon" type="image/x-icon" href="Final_selected.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots Physio & Rehab Clinic - Kolkata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --pista-green: #93C572;
+            --dark-green: #6B9653;
+            --light-green: #C8E6B4;
+            --cream: #FFF8E7;
+            --white: #FFFFFF;
+            --dark-gray: #2C3E2F;
+            --text-gray: #4A5A4D;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-gray);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--pista-green) 0%, var(--dark-green) 100%);
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(107, 150, 83, 0.3);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        .brand {
+            display: flex;
+            align-items: center; /* vertically align logo & text */
+            gap: 12px; /* space between logo and name */
+        }
+        .logo {
+            height: 72px;
+            width: 72px;
+            border-radius: 50%;
+            background-image: url("./FinalSelected.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex-shrink: 0;
+        }
+
+        .logo, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .company_name {
+            font-size: 25px;
+            font-weight: bolder;
+            line-height: 1.1;
+            white-space: nowrap; /* prevents name from breaking into 2 lines */
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                transition: opacity 0.3s;
+                font-weight: 500;
+            }
+
+                .nav-links a:hover {
+                    opacity: 0.8;
+                }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+            .menu-toggle span {
+                width: 25px;
+                height: 3px;
+                background: white;
+                margin: 3px 0;
+                transition: 0.3s;
+            }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(147, 197, 114, 0.95) 0%, rgba(107, 150, 83, 0.95) 100%), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f7ec" width="1200" height="600"/><path d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z" fill="%23C8E6B4" opacity="0.5"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 2rem 100px;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            }
+
+            .hero p {
+                font-size: 1.3rem;
+                margin-bottom: 2rem;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background: white;
+            color: var(--dark-green);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid white;
+        }
+
+            .btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-green);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .specializations {
+            background: var(--cream);
+        }
+
+        .specialization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .specialization-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(147, 197, 114, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--pista-green);
+        }
+
+            .specialization-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 10px 30px rgba(147, 197, 114, 0.3);
+            }
+
+        .spec-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .spinal-cord {
+            height: 100px;
+            width: auto;
+        }
+
+        .human-brain {
+            height: 100px;
+            width: auto;
+        }
+
+        .specialization-card h3 {
+            color: var(--dark-green);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .specialization-card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .specialization-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+            .specialization-card li:before {
+                content: "✓";
+                position: absolute;
+                left: 0;
+                color: var(--pista-green);
+                font-weight: bold;
+            }
+
+        .services {
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--light-green);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+            .service-card:hover {
+                transform: scale(1.05);
+            }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--dark-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .about {
+            background: var(--cream);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            color: var(--dark-green);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: var(--light-green);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            border-left: 4px solid var(--pista-green);
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(147, 197, 114, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+        }
+
+        .stats {
+            background: linear-gradient(135deg, var(--pista-green) 0%, var(--dark-green) 100%);
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .sports_injury {
+            background: var(--cream);
+        }
+        .sports_injury-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .sports_injury-item {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--pista-green);
+            transition: background 0.3s;
+        }
+            .sports_injury-item:hover {
+                background: var(--light-green);
+            }
+            .sports_injury-item h4 {
+                color: var(--dark-green);
+                margin-bottom: 0.5rem;
+            }
+
+        .conditions {
+            background: white;
+        }
+
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .condition-item {
+            background: var(--cream);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--pista-green);
+            transition: background 0.3s;
+        }
+
+            .condition-item:hover {
+                background: var(--light-green);
+            }
+
+            .condition-item h4 {
+                color: var(--dark-green);
+                margin-bottom: 0.5rem;
+            }
+
+        .contact {
+            background: var(--cream);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: stretch;
+        }
+
+        .contact-info h3 {
+            color: var(--dark-green);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: start;
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--pista-green);
+            min-width: 40px;
+        }
+
+        .contact-form {
+            width: 100%;
+            display: block;
+        }
+
+            .contact-form iframe {
+                width: 100%;
+                height: 420px;
+                border-radius: 16px;
+                box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            }
+
+
+            .contact-form h3 {
+                color: var(--dark-green);
+                margin-bottom: 3.0rem;
+                font-size: 1.8rem;
+            }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+                color: var(--dark-gray);
+            }
+
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                width: 100%;
+                padding: 12px;
+                border: 2px solid var(--light-green);
+                border-radius: 8px;
+                font-family: inherit;
+                font-size: 1rem;
+                transition: border-color 0.3s;
+            }
+
+                .form-group input:focus,
+                .form-group textarea:focus,
+                .form-group select:focus {
+                    outline: none;
+                    border-color: var(--pista-green);
+                }
+
+            .form-group textarea {
+                resize: vertical;
+                min-height: 120px;
+            }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, var(--pista-green) 0%, var(--dark-green) 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .submit-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(147, 197, 114, 0.4);
+            }
+
+        footer {
+            background: var(--dark-gray);
+            color: white;
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+            .footer-content p {
+                margin-bottom: 1rem;
+            }
+
+        .footer-links {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        @media (min-width: 1200px) {
+            .logo {
+                height: 90px;
+                width: 90px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--dark-green);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s;
+            }
+
+                .nav-links.active {
+                    max-height: 400px;
+                }
+
+                .nav-links li {
+                    padding: 0.8rem 0;
+                }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .company_name {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form iframe {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-form iframe {
+                height: 280px;
+            }
+
+            .logo {
+                transform: scale(0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="#home">
+                    <div class="logo"></div>
+                </a>
+                <p class="company_name">Roots Physio & Rehab Clinic</p>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#specializations">Specializations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#conditions">Conditions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Avail Advanced Pain Management & Neurological Rehabilitation</h1>
+        <p>Kolkata's premier center for specialized physiotherapy in neurological treatments and spinal conditions. Expert care powered by evidence-based treatment protocols.</p>
+        <div class="hero-buttons">
+            <!-- Change the number here-->
+            <a href="tel:+919876512345" class="btn">📞 Call Now</a>
+            <a href="#specializations" class="btn btn-outline">Our Expertise</a>
+        </div>
+    </section>
+
+    <section id="specializations" class="specializations">
+        <div class="container">
+            <h2 class="section-title">Our Specializations</h2>
+            <p class="section-subtitle">Expert care in two critical areas of rehabilitation with cutting-edge treatment approaches</p>
+            <div class="specialization-grid">
+                <div class="specialization-card">
+                    <span class="spec-icon"><img class="human-brain" src="human-brain-anatomy.png" /></span>
+                    <h3>Neurological Rehabilitation</h3>
+                    <p>Comprehensive therapy for nervous system disorders helping patients regain function, mobility, and independence through specialized neuro-rehabilitation programs.</p>
+                    <ul>
+                        <li>Stroke Recovery & Management</li>
+                        <li>Parkinson's Disease Therapy</li>
+                        <li>Multiple Sclerosis Treatment</li>
+                        <li>Traumatic Brain Injury Rehab</li>
+                        <li>Peripheral Neuropathy Care</li>
+                        <li>Balance & Coordination Training</li>
+                    </ul>
+                </div>
+                <div class="specialization-card">
+                    <span class="spec-icon"><img class="spinal-cord" src="spinal-cord.png" /></span>
+                    <h3>Spinal Rehabilitation</h3>
+                    <p>Advanced treatment protocols for spinal conditions, from acute injuries to chronic pain management, using the latest evidence-based techniques.</p>
+                    <ul>
+                        <li>Spinal Cord Injury Recovery</li>
+                        <li>Disc Herniation Treatment</li>
+                        <li>Scoliosis Management</li>
+                        <li>Post-Surgical Spinal Rehab</li>
+                        <li>Chronic Back Pain Therapy</li>
+                        <li>Spinal Stenosis Care</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Years of Excellence</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8000+</div>
+                <div class="stat-label">Patients Recovered</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Specialist Therapists</div>
+            </div>
+        </div>
+    </section>
+    <section id="sports_injury" class="sports_injury">
+        <div class="container">
+            <h2 class="section-title">Sports Injury : Role of Sports Physiotherapy in Rehabilitation</h2>
+            <p class="section-subtitle">Sports physiotherapists play a vital role in athletic rehabilitation by supporting injury recovery, enhancing performance, and educating athletes on preventing future injuries. Our comprehensive sports physiotherapy services include:</p>
+            <div class="sports_injury-grid">
+                <div class="sports_injury-item">
+                    <h4>
+                        Advanced Pain Relief Therapies
+                    </h4>
+                    <p>
+                        Advanced pain-relief modalities such as TENS, IFT, ultrasound therapy, laser therapy, cold packs, and heat therapy to reduce discomfort and inflammation.
+                    </p>
+                </div>
+                <div class="sports_injury-item">
+                    <h4>
+                        Joint & Soft Tissue Mobilization
+                    </h4>
+                    <p>
+                        Specialized hands-on techniques to relieve pain, improve joint mobility, and support muscles, including the application of Kinesio taping.
+                    </p>
+                </div>
+                <div class="sports_injury-item">
+                    <h4>
+                        Rehabilitation Treadmill Training
+                    </h4>
+                    <p>
+                        Access to a specialized treadmill facility designed to assist in rehabilitation, gait correction, and performance improvement.
+                    </p>
+                </div>
+                <div class="sports_injury-item">
+                    <h4>
+                        Pilates & Core Conditioning
+                    </h4>
+                    <p>
+                        Targeted exercise programs to enhance core strength, stability, flexibility, and overall body control.
+                    </p>
+                </div>
+                <div class="sports_injury-item">
+                    <h4>
+                        Sports Screening & Performance Conditioning
+                    </h4>
+                    <p>
+                        Detailed assessments followed by customized conditioning programs to boost performance and reduce the risk of injuries.
+                    </p>
+                </div>
+                <div class="sports_injury-item">
+                    <h4>
+                        Sports Massage Therapy
+                    </h4>
+                    <p>
+                        Therapeutic massage techniques aimed at promoting recovery, relieving muscle tightness, and improving circulation.
+                    </p>
+                </div>
+                <div class="sports_injury-item">
+                    <h4>
+                        Sports Rehabilitation & Injury Prevention Programs
+                    </h4>
+                    <p>
+                        Structured rehabilitation programs that ensure a safe and effective return to sport while minimizing the chances of re-injury.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Treatment Modalities</h2>
+            <p class="section-subtitle">State-of-the-art therapeutic techniques tailored to your recovery journey</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Electrotherapy</h3>
+                    <p>TENS, IFT, and neuromuscular stimulation</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Manual Therapy</h3>
+                    <p>Hands-on mobilization and manipulation</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏃</div>
+                    <h3>Gait Training</h3>
+                    <p>Advanced walking and movement retraining</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💪</div>
+                    <h3>Exercise Therapy</h3>
+                    <p>Customized strengthening programs</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧘</div>
+                    <h3>Postural Training</h3>
+                    <p>Alignment and ergonomic correction</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>ADL Training</h3>
+                    <p>Activities of daily living rehabilitation</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Vestibular Rehab</h3>
+                    <p>Balance and dizziness management</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Home Programs</h3>
+                    <p>Personalized home exercise plans</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Roots Physio & Rehab Clinic?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Leading the Way in Specialized Rehabilitation</h3>
+                    <p>
+                        Roots Physio & Rehab Clinic is Kolkata's premier physiotherapy center dedicated exclusively to neurological and spinal rehabilitation. Our specialized focus allows us to provide unparalleled expertise in these complex conditions. At our clinic, we follow evidence-based physiotherapy techniques that are scientifically proven and clinically effective. Our treatments are based on the latest research in physical therapy, combined with years of hands-on experience. This approach ensures faster recovery, reduced risk of recurrence, and safe rehabilitation for all age groups.
+                    </p>
+                    <p>
+                        Founded by neuro-physiotherapy specialists with international training, we combine advanced Western rehabilitation techniques with personalized care suited to Indian patients. Our multidisciplinary team includes neurological physiotherapists, spinal specialists, occupational therapists, and rehabilitation physicians.                     From pain management to advanced rehabilitation protocols, every therapy plan is carefully designed, monitored, and modified according to your progress.
+                    </p>
+                    <div class="highlight-box">
+                        <strong>Our Commitment:</strong> Every patient receives an individualized treatment plan based on comprehensive assessment, latest research evidence, and their personal recovery goals.
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🎓</span>
+                        <div>
+                            <strong>Expert Team</strong>
+                            <p>Under the guidance of Dr. Shyama Prasad Mondal.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🏥</span>
+                        <div>
+                            <strong>Modern Facility</strong>
+                            <p>State-of-the-art equipment</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📊</span>
+                        <div>
+                            <strong>Evidence-Based</strong>
+                            <p>Research-backed protocols</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">❤️</span>
+                        <div>
+                            <strong>Patient-Centered</strong>
+                            <p>Personalized care approach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conditions" class="conditions">
+        <div class="container">
+            <h2 class="section-title">Conditions We Treat</h2>
+            <p class="section-subtitle">Specialized care for a wide range of neurological and spinal conditions</p>
+            <div class="conditions-grid">
+                <div class="condition-item">
+                    <h4>Stroke & CVA</h4>
+                    <p>Comprehensive post-stroke rehabilitation for functional recovery</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Spinal Cord Injury</h4>
+                    <p>Progressive rehabilitation for paraplegia and quadriplegia</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Parkinson's Disease</h4>
+                    <p>Specialized therapy to manage symptoms and improve quality of life</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Multiple Sclerosis</h4>
+                    <p>Symptom management and mobility enhancement programs</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Disc Herniation</h4>
+                    <p>Non-surgical treatment for herniated and bulging discs</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Cervical Spondylosis</h4>
+                    <p>Conservative management of neck pain and stiffness</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Sciatica</h4>
+                    <p>Targeted therapy for nerve root compression and pain</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Post-Surgery Rehab</h4>
+                    <p>Recovery programs after spinal and neurological surgeries</p>
+                </div>
+                <div class="condition-item">
+                    <h4>Guillain-Barré Syndrome</h4>
+                    <p>Supportive rehabilitation during recovery phase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Schedule your consultation with our specialists today</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Visit Our Clinic</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+
+                            <strong>Address</strong><br />
+                            2nd floor, 26/5A<br />
+                            Ballygunge Circular Rd, Ballygunge,<br />
+                            Kolkata, West Bengal - 700019<br />
+                            Landmark: St. Lawrence High School
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone</strong><br />
+                            <a href="tel:+918420061303">+91 84200 61303</a><br />
+                            <small>Call for appointments and consultations</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email</strong><br />
+                            <a href="mailto:rootsphysio1@gmail.com">rootsphysio1@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <strong>Clinic Hours</strong><br />
+                            Monday - Saturday: 9:00 AM - 6:00 PM<br />
+                            Sunday: 9:00 AM - 2:00 PM<br />
+                            <small>Emergency consultations available</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>View location in map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.3391257928656!2d88.35516870000001!3d22.528965700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02772570d050dd%3A0x979d92b83d77134!2s26%2F5B%2C%20Ballygunge%20Circular%20Rd%2C%20Garcha%2C%20Ballygunge%2C%20Kolkata%2C%20West%20Bengal%20700019!5e0!3m2!1sen!2sin!4v1769530645683!5m2!1sen!2sin" 
+                            height="600" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Roots Physio & Rehab Clinic</strong></p>
+            <p>A unit of Dr. Shyama Prasad Mondal (PT).</p>
+            <p>An initiative taken by Mrs. Anup Dugar.</p>
+            <div class="footer-links">
+                <p>&copy; 2026 Roots Physio & Rehab Clinic. All Rights Reserved.</p>
+                <p>We treat the root cause of your problem.</p>
+                <p>Dedicated to restoring mobility, function, and quality of life</p>
+            </div>
+        </div>
+    </footer>
+    <!--Code for WhatsApp-->
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+    <script>
+	    var wa_btnSetting = {
+		    "btnColor": "#16BE45",
+		    "ctaText": "",
+		    "cornerRadius": 40,
+		    "marginBottom": 20,
+		    "marginLeft": 20,
+		    "marginRight": 20,
+		    "btnPosition": "right",
+		    "whatsAppNumber": "918420061303",
+		    "welcomeMessage": "Hello",
+		    "zIndex": 999999,
+		    "btnColorScheme": "light"
+	    };
+        window.onload = () => {
+            _waEmbed(wa_btnSetting);
+        };
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navLinks = document.getElementById('navLinks');
+                    navLinks.classList.remove('active');
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
