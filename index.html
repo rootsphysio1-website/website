@@ -49,11 +49,13 @@
             align-items: center;
             padding: 0 2rem;
         }
+
         .brand {
             display: flex;
             align-items: center; /* vertically align logo & text */
             gap: 12px; /* space between logo and name */
         }
+
         .logo {
             height: 72px;
             width: 72px;
@@ -374,14 +376,17 @@
             font-size: 1.1rem;
             opacity: 0.9;
         }
+
         .sports_injury {
             background: var(--cream);
         }
+
         .sports_injury-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
+
         .sports_injury-item {
             background: var(--white);
             padding: 1.5rem;
@@ -389,9 +394,11 @@
             border-left: 4px solid var(--pista-green);
             transition: background 0.3s;
         }
+
             .sports_injury-item:hover {
                 background: var(--light-green);
             }
+
             .sports_injury-item h4 {
                 color: var(--dark-green);
                 margin-bottom: 0.5rem;
@@ -427,6 +434,7 @@
         .contact {
             background: var(--cream);
         }
+
         .contact-grid {
             display: grid;
             grid-template-columns: 1.1fr 1fr;
@@ -546,6 +554,7 @@
             padding-top: 1rem;
             border-top: 1px solid rgba(255,255,255,0.2);
         }
+
         @media (min-width: 1000px) {
             .about-feature-image img {
                 height: 280px;
@@ -610,6 +619,7 @@
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
             .company_name {
                 font-size: 18px;
             }
@@ -634,6 +644,7 @@
                 transform: scale(0.8);
             }
         }
+
         @media (min-width: 1000px) {
             .about-feature-image img {
                 /* Set this to match your new height or larger */
@@ -641,8 +652,25 @@
             }
         }
     </style>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K23BML8Z');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K23BML8Z"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
         <nav>
             <div class="brand">
@@ -991,15 +1019,15 @@
                 </div>
                 <div class="contact-form">
                     <h3>View location in map</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.3391257928656!2d88.35516870000001!3d22.528965700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02772570d050dd%3A0x979d92b83d77134!2s26%2F5B%2C%20Ballygunge%20Circular%20Rd%2C%20Garcha%2C%20Ballygunge%2C%20Kolkata%2C%20West%20Bengal%20700019!5e0!3m2!1sen!2sin!4v1769530645683!5m2!1sen!2sin" 
-                            height="600" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.3391257928656!2d88.35516870000001!3d22.528965700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02772570d050dd%3A0x979d92b83d77134!2s26%2F5B%2C%20Ballygunge%20Circular%20Rd%2C%20Garcha%2C%20Ballygunge%2C%20Kolkata%2C%20West%20Bengal%20700019!5e0!3m2!1sen!2sin!4v1769530645683!5m2!1sen!2sin"
+                            height="600"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
 
-                 </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1019,19 +1047,19 @@
     <!--Code for WhatsApp-->
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
     <script>
-	    var wa_btnSetting = {
-		    "btnColor": "#16BE45",
-		    "ctaText": "",
-		    "cornerRadius": 40,
-		    "marginBottom": 20,
-		    "marginLeft": 20,
-		    "marginRight": 20,
-		    "btnPosition": "right",
-		    "whatsAppNumber": "919147141489",
-		    "welcomeMessage": "Hello",
-		    "zIndex": 999999,
-		    "btnColorScheme": "light"
-	    };
+        var wa_btnSetting = {
+            "btnColor": "#16BE45",
+            "ctaText": "",
+            "cornerRadius": 40,
+            "marginBottom": 20,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "btnPosition": "right",
+            "whatsAppNumber": "919147141489",
+            "welcomeMessage": "Hello",
+            "zIndex": 999999,
+            "btnColorScheme": "light"
+        };
         window.onload = () => {
             _waEmbed(wa_btnSetting);
         };
