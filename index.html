@@ -1188,13 +1188,19 @@
 
             const visible = getVisibleCount();
 
-            // Clone first few videos for seamless loop
-            const extendedList = [...videoLinks, ...videoLinks.slice(0, visible)];
+            let renderList = [];
 
-            extendedList.forEach(link => {
+            if (videoLinks.length > visible) {
+                // ✅ Only then create loop clones
+                renderList = [...videoLinks, ...videoLinks.slice(0, visible)];
+            } else {
+                // ❌ No cloning for small lists
+                renderList = [...videoLinks];
+            }
+
+            renderList.forEach(link => {
                 const video = document.createElement("div");
                 video.classList.add("video-card");
-
                 video.innerHTML = `<iframe src="${link}" allowfullscreen></iframe>`;
                 container.appendChild(video);
             });
@@ -1203,22 +1209,21 @@
         function slide() {
             const visible = getVisibleCount();
 
-            if (videoLinks.length <= visible) return;
+            if (videoLinks.length <= visible) return; // ❗ no sliding
 
             const cardWidth = container.children[0].offsetWidth + 24;
 
             currentIndex++;
             container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
 
-            // Reset seamlessly when reaching cloned items
+            // ✅ seamless loop reset ONLY when slider active
             if (currentIndex === videoLinks.length) {
                 setTimeout(() => {
                     container.style.transition = "none";
                     currentIndex = 0;
                     container.style.transform = `translateX(0px)`;
 
-                    // force reflow
-                    container.offsetHeight;
+                    container.offsetHeight; // force reflow
 
                     container.style.transition = "transform 0.6s ease-in-out";
                 }, 600);
@@ -1236,6 +1241,7 @@
         function init() {
             currentIndex = 0;
             clearInterval(autoSlide);
+
             renderVideos();
 
             container.style.transform = "translateX(0px)";
@@ -1244,7 +1250,6 @@
             startSlider();
         }
 
-        // INIT
         window.addEventListener("load", init);
         window.addEventListener("resize", init);
     </script>
